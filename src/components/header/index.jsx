@@ -7,7 +7,7 @@ import user from "../../asset/user-circle.png";
 
 const Header = () => {
   return (
-    <div>
+    
       <div className="header">
         <div className="left-header">
           <img src={logo} alt="logo-mobile" />
@@ -21,7 +21,7 @@ const Header = () => {
           </span>
         </div>
       </div>
-    </div>
+    
   );
 };
 

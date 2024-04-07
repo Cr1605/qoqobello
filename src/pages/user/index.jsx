@@ -1,9 +1,14 @@
-import React from 'react'
-import "./index.css"
+import React from "react";
+import Header from "../../components/header";
+import Navication from "../../components/nav";
+import "./index.css";
 
 const User = () => {
   return (
-    <div>User</div>
+    <div className="charge">
+      <Header />
+      <Navication />
+    </div>
   )
 }
 
