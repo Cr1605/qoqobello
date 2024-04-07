@@ -1,0 +1,194 @@
+.slide {
+  display: none;
+}
+
+.active {
+  display: flex;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background: #56698f;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ffffff;
+}
+
+.dots.hidden {
+  display: none;
+}
+
+.button-slide {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 171px;
+  height: 80px;
+}
+
+.button-slide.last {
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.btn-left {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  background: #1f2332;
+  border: none;
+}
+
+.btn-left-last {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+  background: #56698f;
+  border-radius: 6px;
+  border: none;
+}
+
+.btn-right {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  background: #4abf40;
+  border-radius: 6px;
+  border: none;
+}
+
+.btn-right-last {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 56px;
+  color: #56698f80;
+  background: #56698f1a;
+  border-radius: 6px;
+  border: none;
+}
+
+.checked {
+  color: #ffffff;
+  background: #4abf40;
+}
+
+.check-box {
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  margin-top: 480px;
+}
+
+.check-box > input {
+  width: 20px;
+  height: 20px;
+  border-radius: 1px;
+  border: 2px solid #ffffff80;
+  margin-right: 15px;
+}
+
+.check-box > p {
+  font-family: "Montserrat", sans-serif;
+  size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+  width: 296px;
+}
+
+/* Start css screen 1 */
+.main-text {
+  margin-top: 52px;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.text > p {
+  position: absolute;
+  width: 328px;
+  top: 423px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+/* Start css screen 2 */
+
+.slide:nth-child(2) .main-text {
+  margin-top: 94px;
+}
+
+.slide:nth-child(2) .text > p {
+  top: 457px;
+}
+
+.slide:nth-child(3) .text > p {
+  top: 413px;
+}
+
+/* Start css screen 4 */
+
+.slide:nth-child(4) .fade-in {
+  position: absolute;
+  top: 191px;
+}
+
+.slide:nth-child(4) .title {
+  margin-top: 17px;
+  height: 198px;
+}
+
+.slide:nth-child(4) .text-accept {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 328px;
+  height: 42px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: #ffffff;
+  margin-bottom: 22px;
+}
+
+.slide:nth-child(4) .text-accept > p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slide:nth-child(4) .dots {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .slide:nth-child(4) .title {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .slide:nth-child(4) .fade-in {
+    width: 100%;
+  }
+}

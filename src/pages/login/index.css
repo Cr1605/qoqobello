@@ -1,0 +1,195 @@
+.main {
+  display: block;
+  height: 707px;
+  padding-top: 32px;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  height: 128px;
+  align-items: center;
+  padding: 0 40px 0 32px;
+  margin-bottom: 8px;
+}
+
+.title:nth-child(1) {
+  display: block;
+}
+
+.title-compte {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+.connection {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-connection {
+  display: grid;
+}
+
+.btn-connection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  width: 275px;
+  height: 42px;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  padding: 8px 16px;
+  gap: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+
+.after-element {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0 22px 0;
+}
+
+.after-element::after {
+  content: "";
+  width: 124px;
+  border-radius: 2px;
+  border: 2px solid #ffffff4d;
+}
+
+/* Start css Email login */
+
+.email-login {
+  height: 248px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.input-login > p {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+  color: #f5f6fa;
+  margin-top: 13px;
+  margin-bottom: 7px;
+}
+
+.input-login > input {
+  width: 274px;
+  height: 32px;
+  padding: 0px 12px 0px 38px;
+  border-radius: 6px;
+  border: 2px solid #56698f33;
+  box-shadow: 0px 0px 0px 0px #00000000 inset;
+}
+
+.input-login > input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #56698f;
+}
+
+.input-login > img {
+  position: absolute;
+  margin-left: 12px;
+  top: 464px;
+}
+
+.input-login:nth-child(2) > img {
+  top: 544px;
+}
+
+.input-login:nth-child(2) > p {
+  margin-top: 25px;
+  margin-bottom: 7px;
+}
+
+.input-login:nth-child(2) > img:last-child {
+  margin-left: -33px;
+  cursor: pointer;
+}
+
+.input-login:nth-child(2) > input {
+  width: 255px;
+  padding: 0px 32px 0px 38px;
+}
+
+.button-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+
+.button-left {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  background: #56698f;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0px 0px 0px 0px #00000000 inset;
+}
+
+.button-right {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 249px;
+  height: 56px;
+  color: #ffffff;
+  background: #4abf40;
+  border-radius: 6px;
+  border: none;
+}
+
+.button-right > img {
+  margin-left: 3px;
+}
+
+.button-left:hover,
+.button-right:hover {
+  opacity: 0.8;
+}
+
+.error-message {
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
